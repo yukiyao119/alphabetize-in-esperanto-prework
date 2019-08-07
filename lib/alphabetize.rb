@@ -6,10 +6,9 @@ def alphabetize(arr)
   esperanto_arr = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars  # esperanto_arr.index {|x| x == "b"}  #=> 1   length 28, index 0-27
   result = []
   new_arr = arr[1..]
-  arr.shift
   # binding.pry
-  new_arr.each_with_index do |word, index| 
-    arr.each_with_index do |value, i|      # value[i] = "b" 
+  arr.each_with_index do |word, index| 
+    new_arr.each_with_index do |value, i|      # value[i] = "b" 
       if word[index] == value[i]
         index += 1 
         i += 1
