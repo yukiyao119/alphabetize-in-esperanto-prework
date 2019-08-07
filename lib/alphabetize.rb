@@ -13,13 +13,19 @@ def alphabetize(arr)
     inner_arr.each_with_index do |value, i|
       # value[i] = "b" 
       if word[index] == value[i]
-        if esperanto_arr.index(word[index]) < esperanto_arr.index(value[i])
-          result << word
-          result << value 
-        end 
-      end 
         index += 1 
         i += 1
+      elsif word[index] != value[i]
+        i_in_esperanto1 = esperanto_arr.index(word[index])
+        i_in_esperanto2 = esperanto_arr.index(value[i])
+        if i_in_esperanto1 - i_in_esperanto2 < 0 
+          result << word 
+          result << value 
+        else 
+          result << value
+          result << word
+        end 
+      end 
       binding.pry
     end 
   end 
