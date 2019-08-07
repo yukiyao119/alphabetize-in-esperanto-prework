@@ -4,7 +4,7 @@ require "pry"
 
 def alphabetize(arr)
   esperanto_arr = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
-  arr.sort_by {|word| 
+  arr.sort_by { |word| 
     word.split("").each do |letter|
       esperanto_arr.index(letter)
     end 
