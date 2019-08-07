@@ -13,7 +13,11 @@ def alphabetize(arr)
       if word[index] != value[i]
         if esperanto_arr.index(word[index]) < esperanto_arr.index(value[i])
           result << word
+          result << value 
         end 
+      else 
+        index += 1 
+        i += 1
       end 
       binding.pry
     end 
