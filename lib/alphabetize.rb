@@ -4,7 +4,11 @@ require "pry"
 
 def alphabetize(arr)
   esperanto_arr = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
-
+  arr.sort_by {|word| 
+    word.split("").each do |letter|
+      esperanto_arr.index(letter)
+    end 
+  }
 end
 # g_words = ["ĝuste", "ĝis revido"]
 # sorted_g_words = ["ĝis revido", "ĝuste"]
