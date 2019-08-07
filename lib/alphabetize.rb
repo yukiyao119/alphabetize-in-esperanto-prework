@@ -10,8 +10,6 @@ def alphabetize(arr)
     end 
   end 
 end
-# g_words = ["ĝuste", "ĝis revido"]
-# sorted_g_words = ["ĝis revido", "ĝuste"]
 
 
 
