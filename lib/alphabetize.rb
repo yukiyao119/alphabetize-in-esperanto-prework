@@ -11,11 +11,11 @@ def alphabetize(arr)
     # "m" is 16
     binding.pry
   end 
-  arr.sort_by {|cur_index| }
 end
 # g_words = ["ĝuste", "ĝis revido"]
 # sorted_g_words = ["ĝis revido", "ĝuste"]
 
+sort_by {}
 
 
 
