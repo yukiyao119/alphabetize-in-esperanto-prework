@@ -17,10 +17,9 @@ def alphabetize(arr)
           result << word
           result << value 
         end 
-      else 
+      end 
         index += 1 
         i += 1
-      end 
       binding.pry
     end 
   end 
