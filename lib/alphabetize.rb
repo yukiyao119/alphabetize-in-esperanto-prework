@@ -1,3 +1,23 @@
+require "pry"
+
+# ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
+
 def alphabetize(arr)
-  # code here
+  esperanto_arr = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
+  # esperanto_arr.index {|x| x == "b"}  #=> 1   length 28, index 0-27
+  result = []
+  cur_index = 
+    arr.each do |word| 
+      cur_index = esperanto_arr.index(word.split("").first)
+      binding.pry
+    end 
+  arr.sort_by {|cur_index| }
 end
+# g_words = ["ĝuste", "ĝis revido"]
+# sorted_g_words = ["ĝis revido", "ĝuste"]
+
+
+
+
+
+
