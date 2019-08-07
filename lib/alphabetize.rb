@@ -16,6 +16,7 @@ def alphabetize(arr)
       elsif word[index] != value[i]
         i_in_esperanto1 = esperanto_arr.index(word[index])
         i_in_esperanto2 = esperanto_arr.index(value[i])
+        binding.pry
         if i_in_esperanto1 - i_in_esperanto2 < 0 
           result << word 
           result << value 
