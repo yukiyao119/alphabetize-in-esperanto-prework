@@ -12,7 +12,7 @@ def alphabetize(arr)
     # i_in_esperanto = esperanto_arr.index()
     inner_arr.each_with_index do |value, i|
       # value[i] = "b" 
-      if word[index] != value[i]
+      if word[index] == value[i]
         if esperanto_arr.index(word[index]) < esperanto_arr.index(value[i])
           result << word
           result << value 
