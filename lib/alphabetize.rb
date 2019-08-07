@@ -3,8 +3,7 @@ require "pry"
 # ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
 
 def alphabetize(arr)
-  esperanto_arr = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
-  # esperanto_arr.index {|x| x == "b"}  #=> 1   length 28, index 0-27
+  esperanto_arr = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars  # esperanto_arr.index {|x| x == "b"}  #=> 1   length 28, index 0-27
   result = []
   i_in_esperanto = 0
   arr.each do |word| 
