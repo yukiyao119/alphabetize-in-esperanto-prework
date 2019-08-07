@@ -22,8 +22,8 @@ def alphabetize(arr)
           result << value
           result << word
         end 
-        break
       end 
+      break
       # binding.pry
     end 
   end 
