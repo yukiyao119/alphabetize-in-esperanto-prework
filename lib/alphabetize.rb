@@ -7,6 +7,7 @@ def alphabetize(arr)
   result = []
   i_in_esperanto = 0
   arr.split("")
+  binding.pry
   # arr.each do |word| 
   #   i_in_esperanto = esperanto_arr.index(word.split("").first)
   #   # "m" is 16
