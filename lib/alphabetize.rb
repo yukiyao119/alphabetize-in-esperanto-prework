@@ -6,11 +6,12 @@ def alphabetize(arr)
   esperanto_arr = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
   # esperanto_arr.index {|x| x == "b"}  #=> 1   length 28, index 0-27
   result = []
-  cur_index = 
-    arr.each do |word| 
-      cur_index = esperanto_arr.index(word.split("").first)
-      binding.pry
-    end 
+  i_in_esperanto = 0
+  arr.each do |word| 
+    i_in_esperanto = esperanto_arr.index(word.split("").first)
+    # "m" is 16
+    binding.pry
+  end 
   arr.sort_by {|cur_index| }
 end
 # g_words = ["ĝuste", "ĝis revido"]
