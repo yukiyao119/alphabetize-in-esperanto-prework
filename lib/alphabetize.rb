@@ -6,7 +6,6 @@ def alphabetize(arr)
   esperanto_arr = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars  # esperanto_arr.index {|x| x == "b"}  #=> 1   length 28, index 0-27
   result = []
   new_arr = arr[1..]
-  # binding.pry
   arr.each_with_index do |word, index| 
     new_arr.each_with_index do |value, i|      # value[i] = "b" 
       if word[index] == value[i]
@@ -15,7 +14,7 @@ def alphabetize(arr)
       elsif word[index] != value[i]
         i_in_esperanto1 = esperanto_arr.index(word[index])
         i_in_esperanto2 = esperanto_arr.index(value[i])
-        binding.pry
+        # binding.pry
         if i_in_esperanto1 - i_in_esperanto2 < 0 
           result << word 
           result << value 
