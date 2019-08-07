@@ -21,7 +21,7 @@ def alphabetize(arr)
         index += 1 
         i += 1
       end 
-      binding.pry
+      # binding.pry
     end 
   end 
 end
