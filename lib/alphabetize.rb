@@ -29,6 +29,7 @@ def alphabetize(arr)
       # binding.pry
     end 
   end 
+  result
 end
 # g_words = ["ĝuste", "ĝis revido"]
 # sorted_g_words = ["ĝis revido", "ĝuste"]
