@@ -15,7 +15,7 @@ end
 # g_words = ["ĝuste", "ĝis revido"]
 # sorted_g_words = ["ĝis revido", "ĝuste"]
 
-sort_by {}
+sort_by {|obj|}
 
 
 
