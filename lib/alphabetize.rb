@@ -18,12 +18,11 @@ def alphabetize(arr)
         if i_in_esperanto1 - i_in_esperanto2 < 0 
           result << word 
           result << value 
-          break
         else 
           result << value
           result << word
-          break
         end 
+        break
       end 
       # binding.pry
     end 
